@@ -23,12 +23,12 @@ I am a good learner, and eager to participate in industry based research or work
     * A web crawler and a mini search engine [CS6200-Northeastern](http://www.ccs.neu.edu/course/cs6200s14/)
 
 #### Notice
-Due to the policy of not distributing project solutions on the internet, my course project solutions are private project on Github. If you wanna see some my code samples, feel free to send me an email(ciyo.ma@gmail.com). :D
+Due to the policy of not distributing project solutions on the internet, my course project solutions are private project on Github. If you wanna see some my code samples, feel free to send me an email (ciyo.ma@gmail.com). :D
 
 ![Me](/image/me.jpg)
 
 <ul class="posts">
-    <li><span>{% DateTime.now.to_date %}</span></li>
+    <li><span>{%= DateTime.now.to_date %}</span></li>
 </ul>
 
 
