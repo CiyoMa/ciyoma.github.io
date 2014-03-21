@@ -8,10 +8,10 @@ Hi, my name is Siyong Ma, and now a Master candidate in Computer Science graduat
 
 **I am looking for 2014 summer research/industry internship and COOP intern opportunity for Spring 2015. **
 
-### About me
+#### About me
 I am a good learner, and eager to participate in industry based research or work. I am familiar with Python, Java, and C++. I am currently taking some interesting MOOC online courses on [edx.org](http://www.edx.org/). Besides taking Algorithm courses at Northeastern University, I also audit [6.006](http://stellar.mit.edu/S/course/6/sp14/6.006/) & [6.046](http://stellar.mit.edu/S/course/6/sp14/6.046/) at MIT. I'm also auditing Stochastic Process course at Boston University, out of my interest in Markov process and Poisson point process.
 
-### My recent projects:
+#### My recent projects:
   * Web:
     * An Django online shopping website
     * A PHP website for rendering graphic statistic report
@@ -22,13 +22,13 @@ I am a good learner, and eager to participate in industry based research or work
        * Machine Learning Project
     * A web crawler and a mini search engine [CS6200-Northeastern](http://www.ccs.neu.edu/course/cs6200s14/)
 
-### Notice
+#### Notice
 Due to the policy of not distributing project solutions on the internet, my course project solutions are private project on Github. If you wanna see some my code samples, feel free to send me an email(ciyo.ma@gmail.com). :D
 
 ![Me](/image/me.jpg)
 
 <ul class="posts">
-    <li><span>{{ Date.now() }}</span></li>
+    <li><span>{% DateTime.now.to_date %}</span></li>
 </ul>
 
 
