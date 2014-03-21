@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Hello!
 ---
 {% include JB/setup %}
 
