@@ -11,13 +11,14 @@ I am looking for 2014 summer research/industry internship and COOP intern opport
 I am a good learner, and eager to participate in industry based research or work. I am familiar with Python, Java, and C++. I am currently taking some interesting MOOC online courses on [edx.org](http://www.edx.org/). Besides taking Algorithm courses at Northeastern University, I also audit [6.006](http://stellar.mit.edu/S/course/6/sp14/6.006/) & [6.046](http://stellar.mit.edu/S/course/6/sp14/6.046/) at MIT. I'm also auditing Stochastic Process course at Boston University, out of my interest in Markov process and Poisson point process.
 
 * My recent projects:
-** Web:
-An Django online shopping website
-A PHP website for rendering graphic statistic report
-** Course Projects:
-Berkeley Artificial Intelligence Course Project [CS188](http://rll.berkeley.edu/cs188/)
-*** Programming for Pacman AI
-*** Machine Learning Project
+  ** Web:
+    *** An Django online shopping website
+    *** A PHP website for rendering graphic statistic report
+  ** Course Projects:
+    *** Berkeley Artificial Intelligence Course Project [CS188-Berkeley](http://rll.berkeley.edu/cs188/)
+       **** Programming for Pacman AI
+       **** Machine Learning Project
+    *** A web crawler and a mini search engine [CS6200-Northeastern](http://www.ccs.neu.edu/course/cs6200s14/)
 
 
 
@@ -27,9 +28,7 @@ Due to the policy of not distributing project solutions on the internet, my cour
 ![Me](/image/me.jpg)
 
 <ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+    <li><span>{{ Date.now }}</span></li>
 </ul>
 
 
