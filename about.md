@@ -13,4 +13,4 @@ I am looking for 2014 summer research/industry internship and COOP intern opport
 
 I am familiar with Python, Java, and C++. 
 
-![Myself](/image/IMG_1521.jpg)
+![Myself](/image/me.jpg)
