@@ -1,7 +1,7 @@
 /* Custom container */
 body { 
   background-image: url('/image/bgi.jpg');
-  background-size: 100%;
+  background-size: inherit;
 }
 
 .container-narrow {
