@@ -1,4 +1,9 @@
 /* Custom container */
+body { 
+  background-image: url('/image/bgi.jpg');
+  background-size: 100%;
+}
+
 .container-narrow {
   margin: 0 auto;
   max-width: 700px; }

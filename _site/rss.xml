@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>Jekyll Bootstrap</title>
-        <description>Jekyll Bootstrap - Name Lastname</description>
-        <link>http://username.github.io</link>
-        <link>http://username.github.io</link>
-        <lastBuildDate>2014-01-27T23:55:24-05:00</lastBuildDate>
-        <pubDate>2014-01-27T23:55:24-05:00</pubDate>
+        <title>Siyong Ma</title>
+        <description>Siyong Ma - Siyong Ma</description>
+        <link>http://ciyoma.github.io</link>
+        <link>http://ciyoma.github.io</link>
+        <lastBuildDate>2014-03-21T14:25:23-04:00</lastBuildDate>
+        <pubDate>2014-03-21T14:25:23-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -326,8 +326,8 @@ tags : [how-to, jekyll]&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;next_steps&quot;&gt;Next Steps&lt;/h2&gt;
 
 &lt;p&gt;Please take a look at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you’d like.&lt;/p&gt;</description>
-                <link>http://username.github.io/lessons/2011/12/29/jekyll-introduction</link>
-                <guid>http://username.github.io/lessons/2011/12/29/jekyll-introduction</guid>
+                <link>http://ciyoma.github.io/lessons/2011/12/29/jekyll-introduction</link>
+                <guid>http://ciyoma.github.io/lessons/2011/12/29/jekyll-introduction</guid>
                 <pubDate>2011-12-29T00:00:00-05:00</pubDate>
         </item>
 

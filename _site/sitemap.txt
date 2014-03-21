@@ -1,11 +1,12 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
+http://ciyoma.github.io/about.html
+http://ciyoma.github.io/archive.html
+http://ciyoma.github.io/atom.xml
+http://ciyoma.github.io/categories.html
+http://ciyoma.github.io/index.html
+http://ciyoma.github.io/pages.html
+http://ciyoma.github.io/rss.xml
+http://ciyoma.github.io/sitemap.txt
+http://ciyoma.github.io/tags.html
 
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://ciyoma.github.io/lessons/2011/12/29/jekyll-introduction

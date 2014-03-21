@@ -24,7 +24,8 @@ I am a good learner, and eager to participate in industry based research or work
 #### Notice
 Due to the policy of not distributing project solutions on the internet, my course project solutions are private project on Github. If you wanna see some my code samples, feel free to send me an email (ciyo.ma@gmail.com) :D
 
-![Me](/image/me.jpg)
+
+<!-- ![Me](/image/me.jpg) -->
 
 
 
