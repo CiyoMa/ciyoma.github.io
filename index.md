@@ -14,21 +14,19 @@ I am a good learner, and eager to participate in industry based research or work
   * Web:
     * An Django online shopping website
     * A PHP website for rendering graphic statistic report
+    * A forum using ruby on rails
   * Course Projects:
     * Berkeley Artificial Intelligence Course Project [CS188-Berkeley](http://rll.berkeley.edu/cs188/)
        * Programming for Pacman AI
        * Machine Learning Project
     * A web crawler and a mini search engine [CS6200-Northeastern](http://www.ccs.neu.edu/course/cs6200s14/)
 
-
-
-
 Due to the policy of not distributing project solutions on the internet, my course project solutions are private project on Github. If you wanna see some my code samples, feel free to send me an email. :D
 
 ![Me](/image/me.jpg)
 
 <ul class="posts">
-    <li><span>{{ Date.now }}</span></li>
+    <li><span>{{ Date.now() }}</span></li>
 </ul>
 
 
