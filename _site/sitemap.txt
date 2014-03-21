@@ -9,4 +9,4 @@ http://ciyoma.github.io/rss.xml
 http://ciyoma.github.io/sitemap.txt
 http://ciyoma.github.io/tags.html
 
-http://ciyoma.github.io/lessons/2011/12/29/jekyll-introduction
+http://ciyoma.github.io/project/2014/03/21/Pacman-AI
