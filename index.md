@@ -6,7 +6,7 @@ layout: page
 
 Hi, my name is Siyong Ma, and now a Master candidate in Computer Science graduate program of [Northeastern University](http://www.ccs.neu.edu/), Boston, MA. I earned my B.Engineering degree in Software Engineering from Software Engineering Institute of [East China Normal University](http://www.ecnu.edu.cn), July, 2013.
 
-**I am looking for 2014 summer research/industry internship and COOP intern opportunity for Spring 2015. **
+**I am looking for 2014 summer internship and COOP intern opportunity for Spring 2015. **
 
 #### About me
 I am a good learner, and eager to participate in industry based research or work. I am familiar with Python, Java, and C++. I am currently taking some interesting MOOC online courses on [edx.org](http://www.edx.org/). Besides taking Algorithm courses at Northeastern University, I also audit [6.006](http://stellar.mit.edu/S/course/6/sp14/6.006/) & [6.046](http://stellar.mit.edu/S/course/6/sp14/6.046/) at MIT. I'm also auditing Stochastic Process course at Boston University, out of my interest in Markov process and Poisson point process.
@@ -28,7 +28,7 @@ Due to the policy of not distributing project solutions on the internet, my cour
 ![Me](/image/me.jpg)
 
 <ul class="posts">
-    <li><span>{%= DateTime.now.to_date %}</span></li>
+    <li><span>{{ page.date | date: "%-d %B %Y" }}</span></li>
 </ul>
 
 
