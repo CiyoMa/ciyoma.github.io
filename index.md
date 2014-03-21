@@ -1,8 +1,7 @@
 ---
 layout: page
+title: "Siyong Ma"
 ---
-
-## Siyong Ma
 
 Hi, my name is Siyong Ma, and now a Master candidate in Computer Science graduate program of [Northeastern University](http://www.ccs.neu.edu/), Boston, MA. I earned my B.Engineering degree in Software Engineering from Software Engineering Institute of [East China Normal University](http://www.ecnu.edu.cn), July, 2013.
 
