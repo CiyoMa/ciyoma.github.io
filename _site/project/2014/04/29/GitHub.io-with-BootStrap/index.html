@@ -150,7 +150,7 @@
 
 <p>Try cooler BootStrap icon nav-bar or modify it to transparent with a background image for your page!</p>
 
-<p>Put following code into folder “_site/assets/themes/twitter/css/style.css” to make your nav bar transparent</p>
+<p>Put following code into file “_site/assets/themes/twitter/css/style.css” to make your nav bar transparent</p>
 
 <pre class="sh"><code class="sh">.navbar {
    background-color: transparent;
@@ -163,9 +163,12 @@
 
 .navbar li { color: #000 } </code></pre>
 
-<p>Then modify your page with a background image!</p>
+<p>Then modify your page with a background image! File location: “_site/css/main.css”</p>
 
-<pre class="sh"><code class="sh">background-image: url(&#39;/YOUR_IMAGE_PATH_UNDER_YOUR_PROJECT_FOLDER&#39;);</code></pre>
+<pre class="sh"><code class="sh">html, body { 
+  background-image: url(&#39;/YOUR_IMAGE_PATH_UNDER_YOUR_PROJECT_FOLDER&#39;);
+  height: 100%; 
+}</code></pre>
 
 <p>You can also modify the navi-bar information in “_includes/themes/twitter/default.html” For me, I modify it with</p>
 
