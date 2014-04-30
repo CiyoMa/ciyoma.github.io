@@ -169,14 +169,22 @@
 
 <p>You can also modify the navi-bar information in “_includes/themes/twitter/default.html” For me, I modify it with</p>
 
-<pre class="sh"><code class="sh">
-            &lt;li&gt;&lt;a href=&quot;/archive.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;        
+<pre class="sh"><code class="sh">            &lt;li&gt;&lt;a href=&quot;/archive.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;        
             &lt;li&gt;&lt;a href=&quot;/categories.html&quot;&gt;Categories&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;/tags.html&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;/about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</code></pre>
 
 <p>where about.html is rendered from about.md I write under the project root folder.</p>
+
+<p>Now, try to write new post! New a file with name format “YYYY(YEAR)-MM(MONTH)-DD(DAY)-YOUR-PAGE-NAME-WITH-BLANK-REPLACED-BY-HYPHEN” under folder “_posts”, with format</p>
+
+<pre class="sh"><code class="sh">---
+layout: post
+category: [YOUR CATEGORY]
+tags: [YOUR TAGS]
+---
+MAKR DOWN CONTENT</code></pre>
 
 <p>I’ll recommend a great tool <a href="http://dillinger.io/">Dillinger</a> to write MarkDown file! You can preview your MarkDown file online, similar to latex previewer <a href="http://writelatex.com">WriteLatex</a>.</p>
 
@@ -185,8 +193,6 @@
 <p>Good Luck!</p>
 
 <p>SIYONG MA</p>
-
-<p>April 29</p>
     </div>
 
   

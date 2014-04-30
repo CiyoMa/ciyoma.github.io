@@ -5,8 +5,8 @@
         <description>Siyong Ma - Siyong Ma</description>
         <link>http://ciyoma.github.io</link>
         <link>http://ciyoma.github.io</link>
-        <lastBuildDate>2014-04-29T23:09:07-04:00</lastBuildDate>
-        <pubDate>2014-04-29T23:09:07-04:00</pubDate>
+        <lastBuildDate>2014-04-29T23:17:30-04:00</lastBuildDate>
+        <pubDate>2014-04-29T23:17:30-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -55,8 +55,7 @@
 
 &lt;p&gt;You can also modify the navi-bar information in “_includes/themes/twitter/default.html” For me, I modify it with&lt;/p&gt;
 
-&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;
-            &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/archive.html&amp;quot;&amp;gt;Archive&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;        
+&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;            &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/archive.html&amp;quot;&amp;gt;Archive&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;        
             &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/categories.html&amp;quot;&amp;gt;Categories&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
             &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/pages.html&amp;quot;&amp;gt;Pages&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
             &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/tags.html&amp;quot;&amp;gt;Tags&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
@@ -64,15 +63,22 @@
 
 &lt;p&gt;where about.html is rendered from about.md I write under the project root folder.&lt;/p&gt;
 
+&lt;p&gt;Now, try to write new post! New a file with name format “YYYY(YEAR)-MM(MONTH)-DD(DAY)-YOUR-PAGE-NAME-WITH-BLANK-REPLACED-BY-HYPHEN” under folder “_posts”, with format&lt;/p&gt;
+
+&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;---
+layout: post
+category: [YOUR CATEGORY]
+tags: [YOUR TAGS]
+---
+MAKR DOWN CONTENT&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;I’ll recommend a great tool &lt;a href=&quot;http://dillinger.io/&quot;&gt;Dillinger&lt;/a&gt; to write MarkDown file! You can preview your MarkDown file online, similar to latex previewer &lt;a href=&quot;http://writelatex.com&quot;&gt;WriteLatex&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Build your page with beatiful BootStrap css class, just by referring &lt;a href=&quot;http://getbootstrap.com/2.3.2/components.html&quot;&gt;BootStrap&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Good Luck!&lt;/p&gt;
 
-&lt;p&gt;SIYONG MA&lt;/p&gt;
-
-&lt;p&gt;April 29&lt;/p&gt;</description>
+&lt;p&gt;SIYONG MA&lt;/p&gt;</description>
                 <link>http://ciyoma.github.io/project/2014/04/29/GitHub.io-with-BootStrap</link>
                 <guid>http://ciyoma.github.io/project/2014/04/29/GitHub.io-with-BootStrap</guid>
                 <pubDate>2014-04-29T00:00:00-04:00</pubDate>
