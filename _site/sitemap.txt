@@ -9,4 +9,5 @@ http://ciyoma.github.io/rss.xml
 http://ciyoma.github.io/sitemap.txt
 http://ciyoma.github.io/tags.html
 
+http://ciyoma.github.io/project/2014/04/29/GitHub.io-with-BootStrap
 http://ciyoma.github.io/project/2014/03/21/Pacman-AI

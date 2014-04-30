@@ -4,13 +4,81 @@
  <title>Siyong Ma</title>
  <link href="http://ciyoma.github.io/" rel="self"/>
  <link href="http://ciyoma.github.io"/>
- <updated>2014-03-21T17:17:08-04:00</updated>
+ <updated>2014-04-29T23:09:07-04:00</updated>
  <id>http://ciyoma.github.io</id>
  <author>
    <name>Siyong Ma</name>
    <email>ciyo.ma@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Github.io With Bootstrap</title>
+   <link href="http://ciyoma.github.io/project/2014/04/29/GitHub.io-with-BootStrap"/>
+   <updated>2014-04-29T00:00:00-04:00</updated>
+   <id>http://ciyoma.github.io/project/2014/04/29/GitHub.io-with-BootStrap</id>
+   <content type="html">&lt;p&gt;Setting up Github.io page is super easy.&lt;/p&gt;
+
+&lt;p&gt;You just need create a public project with name:&lt;/p&gt;
+
+&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;[YOUR_GITHUB_USERNAME_HERE_WITHOUT_PARANTHESIS].github.io&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then just write a index.html file for this project to set up your static personal GitHub.io page.&lt;/p&gt;
+
+&lt;p&gt;It does not look cool, right? How to deploy BootStrap? Use &lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;JekyllBootStrap&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;MAKE SURE YOU ALREADY INSTALL RUBY ON YOUR MACHINE FOR DEVELOP USE.&lt;/p&gt;
+
+&lt;p&gt;Download JekyllBootStrap into your page folder.&lt;/p&gt;
+
+&lt;p&gt;Modify content in “_config.yml” to your profile information.&lt;/p&gt;
+
+&lt;p&gt;Try run jekyll on your machine under the project folder.&lt;/p&gt;
+
+&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Much better, but still bad looking? How?&lt;/p&gt;
+
+&lt;p&gt;Try cooler BootStrap icon nav-bar or modify it to transparent with a background image for your page!&lt;/p&gt;
+
+&lt;p&gt;Put following code into folder “_site/assets/themes/twitter/css/style.css” to make your nav bar transparent&lt;/p&gt;
+
+&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;.navbar {
+   background-color: transparent;
+   background: transparent;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.navbar li { color: #000 } &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then modify your page with a background image!&lt;/p&gt;
+
+&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;background-image: url(&amp;#39;/YOUR_IMAGE_PATH_UNDER_YOUR_PROJECT_FOLDER&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can also modify the navi-bar information in “_includes/themes/twitter/default.html” For me, I modify it with&lt;/p&gt;
+
+&lt;pre class=&quot;sh&quot;&gt;&lt;code class=&quot;sh&quot;&gt;
+            &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/archive.html&amp;quot;&amp;gt;Archive&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;        
+            &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/categories.html&amp;quot;&amp;gt;Categories&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/pages.html&amp;quot;&amp;gt;Pages&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/tags.html&amp;quot;&amp;gt;Tags&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/about.html&amp;quot;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where about.html is rendered from about.md I write under the project root folder.&lt;/p&gt;
+
+&lt;p&gt;I’ll recommend a great tool &lt;a href=&quot;http://dillinger.io/&quot;&gt;Dillinger&lt;/a&gt; to write MarkDown file! You can preview your MarkDown file online, similar to latex previewer &lt;a href=&quot;http://writelatex.com&quot;&gt;WriteLatex&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Build your page with beatiful BootStrap css class, just by referring &lt;a href=&quot;http://getbootstrap.com/2.3.2/components.html&quot;&gt;BootStrap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Good Luck!&lt;/p&gt;
+
+&lt;p&gt;SIYONG MA&lt;/p&gt;
+
+&lt;p&gt;April 29&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Pacman Ai</title>
