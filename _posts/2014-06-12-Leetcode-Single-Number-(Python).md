@@ -3,15 +3,16 @@ layout: post
 category: Leetcode
 tags: [Leetcode, Bit Magic]
 ---
-# Requirement:
+### Requirement:
 Given an array of integers, every element appears twice except for one. Find that single one.
 
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-# Analysis:
-Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. 
-# Code:
+### Analysis:
+Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. Bit magic is linear without using extra memory.
+
+### Code:
 
     class Solution:
         # @param A, a list of integer
