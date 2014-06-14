@@ -16,7 +16,7 @@ MD(n) = max(MD(n.left), MD(n.right))
 if n is None: MD(n) = 0
 
 ### Code:
-```python
+{% highlight python %}
 
     # Definition for a  binary tree node
     # class TreeNode:
@@ -32,5 +32,5 @@ if n is None: MD(n) = 0
             if not root:
                 return 0
             return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
-            
-```
+     
+{% endhighlight %}
