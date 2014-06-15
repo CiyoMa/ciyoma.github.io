@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" /> -->
     <!-- End SyntaxHighlighter -->
 
-    <title>Leetcode Single Number (python)</title>
+    <title>Leetcode Best Time To Buy And Sell Stock I (python)</title>
     
     <meta name="author" content="Siyong Ma">
 
@@ -126,49 +126,52 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Leetcode Single Number (python) </h1>
+  <h1>Leetcode Best Time To Buy And Sell Stock I (python) </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>12 June 2014</span>
+      <span>15 June 2014</span>
     </div>
     <div class="content">
       <h3>Requirement:</h3>
 
-<p>Given an array of integers, every element appears twice except for one. Find that single one.</p>
+<p>Say you have an array for which the ith element is the price of a given stock on day i.</p>
 
-<p>Note:
-Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</p>
+<p>If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.</p>
 
 <h3>Analysis:</h3>
 
-<p>Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. Bit magic is linear without using extra memory.</p>
+<p>Solve it by Dynamic Programming!
+The maximum profit at day i is denoted as p[i]. The choice at day i+1 is either to sell it that day or sell it after that day (keep the profit for future). So choose the better one.</p>
+
+<p>Therefore, $$p[i] = max(p[i-1]+prices[i]-prices[i-1], prices[i]-prices[i-1]) $$
+$$ p[0] = 0 $$</p>
+
+<p>Then we choose the best profit we can get from all n days.</p>
+
+<p>So the running time is O(n).</p>
 
 <h3>Code:</h3>
 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="python"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="c"># @param A, a list of integer</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="python">1
+2
+3
+4
+5
+6
+7
+8
+9</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="c"># @param prices, a list of integer</span>
     <span class="c"># @return an integer</span>
-    <span class="k">def</span> <span class="nf">singleNumber</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">):</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">None</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">A</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">i</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">^=</span> <span class="n">i</span>
-        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">def</span> <span class="nf">maxProfit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prices</span><span class="p">):</span>
+        <span class="n">delta</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">prices</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">prices</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">delta</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)):</span>
+            <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -204,7 +207,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
      
     	<li><a href="/tags.html#Leetcode-ref">Leetcode <span>8</span></a></li>
      
-    	<li><a href="/tags.html#Bit Magic-ref">Bit Magic <span>1</span></a></li>
+    	<li><a href="/tags.html#Dynamic Programming-ref">Dynamic Programming <span>3</span></a></li>
     
   
 
@@ -217,11 +220,11 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/project/2014/04/29/GitHub.io-with-BootStrap" title="Github.io With Bootstrap">&larr; Previous</a></li>
+        <li class="prev"><a href="/leetcode/2014/06/14/Leetcode-Maximum-Depth-of-Binary-Tree-%28Python%29" title="Leetcode Maximum Depth Of Binary Tree (python)">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/leetcode/2014/06/14/Leetcode-Maximum-Depth-of-Binary-Tree-%28Python%29" title="Leetcode Maximum Depth Of Binary Tree (python)">Next &rarr;</a></li>
+        <li class="next"><a href="/leetcode/2014/06/15/Leetcode-Best-Time-To-Buy-And-Sell-Stock-I-I-%28Python%29" title="Leetcode Best Time To Buy And Sell Stock I I (python)">Next &rarr;</a></li>
       
       </ul>
     </div>

@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" /> -->
     <!-- End SyntaxHighlighter -->
 
-    <title>Leetcode Single Number (python)</title>
+    <title>Leetcode Reverse Integer (python)</title>
     
     <meta name="author" content="Siyong Ma">
 
@@ -126,25 +126,34 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Leetcode Single Number (python) </h1>
+  <h1>Leetcode Reverse Integer (python) </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>12 June 2014</span>
+      <span>15 June 2014</span>
     </div>
     <div class="content">
       <h3>Requirement:</h3>
 
-<p>Given an array of integers, every element appears twice except for one. Find that single one.</p>
+<p>Reverse digits of an integer.</p>
 
-<p>Note:
-Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</p>
+<p>Example1: x = 123, return 321</p>
+
+<p>Example2: x = -123, return -321</p>
 
 <h3>Analysis:</h3>
 
-<p>Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. Bit magic is linear without using extra memory.</p>
+<p>initialize result = 0</p>
+
+<p>Then, for every digits d from the least significant one to the most significant one, </p>
+
+<p>result *= 10, result += d</p>
+
+<p>the for every digits d can be implemented as d = num % 10, num /= 10</p>
+
+<p>return result with correct sign.</p>
 
 <h3>Code:</h3>
 
@@ -158,17 +167,21 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
  8
  9
 10
-11</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="c"># @param A, a list of integer</span>
+11
+12
+13</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
     <span class="c"># @return an integer</span>
-    <span class="k">def</span> <span class="nf">singleNumber</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">):</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">None</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">A</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">i</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">^=</span> <span class="n">i</span>
-        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">*=</span> <span class="mi">10</span>
+            <span class="n">result</span> <span class="o">+=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">10</span>
+            <span class="n">x</span> <span class="o">/=</span> <span class="mi">10</span>
+        <span class="k">return</span> <span class="n">flag</span> <span class="o">*</span> <span class="n">result</span>
 </pre></div>
 </td></tr></table>
 
@@ -203,8 +216,6 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
   
      
     	<li><a href="/tags.html#Leetcode-ref">Leetcode <span>8</span></a></li>
-     
-    	<li><a href="/tags.html#Bit Magic-ref">Bit Magic <span>1</span></a></li>
     
   
 
@@ -217,11 +228,11 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/project/2014/04/29/GitHub.io-with-BootStrap" title="Github.io With Bootstrap">&larr; Previous</a></li>
+        <li class="prev"><a href="/leetcode/2014/06/15/Leetcode-Best-Time-To-Buy-And-Sell-Stock-I-I-%28Python%29" title="Leetcode Best Time To Buy And Sell Stock I I (python)">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/leetcode/2014/06/14/Leetcode-Maximum-Depth-of-Binary-Tree-%28Python%29" title="Leetcode Maximum Depth Of Binary Tree (python)">Next &rarr;</a></li>
+        <li class="next"><a href="/leetcode/2014/06/15/Leetcode-Same-Tree-%28Python%29" title="Leetcode Same Tree (python)">Next &rarr;</a></li>
       
       </ul>
     </div>

@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" /> -->
     <!-- End SyntaxHighlighter -->
 
-    <title>Leetcode Single Number (python)</title>
+    <title>Leetcode Same Tree (python)</title>
     
     <meta name="author" content="Siyong Ma">
 
@@ -126,25 +126,29 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Leetcode Single Number (python) </h1>
+  <h1>Leetcode Same Tree (python) </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>12 June 2014</span>
+      <span>15 June 2014</span>
     </div>
     <div class="content">
       <h3>Requirement:</h3>
 
-<p>Given an array of integers, every element appears twice except for one. Find that single one.</p>
+<p>Given two binary trees, write a function to check if they are equal or not.</p>
 
-<p>Note:
-Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</p>
+<p>Two binary trees are considered equal if they are structurally identical and the nodes have the same value.</p>
 
 <h3>Analysis:</h3>
 
-<p>Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. Bit magic is linear without using extra memory.</p>
+<p>Two trees are same, if and only if,</p>
+
+<ol>
+<li><p>Current two nodes are the same. (Both none, or Both not None and have the same value)</p></li>
+<li><p>The left/right subtrees of current two nodes are the same</p></li>
+</ol>
 
 <h3>Code:</h3>
 
@@ -158,17 +162,33 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
  8
  9
 10
-11</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="c"># @param A, a list of integer</span>
-    <span class="c"># @return an integer</span>
-    <span class="k">def</span> <span class="nf">singleNumber</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">):</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">None</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">A</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">i</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">result</span> <span class="o">^=</span> <span class="n">i</span>
-        <span class="k">return</span> <span class="n">result</span>
+11
+12
+13
+14
+15
+16
+17
+18
+19</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># Definition for a  binary tree node</span>
+<span class="c"># class TreeNode:</span>
+<span class="c">#     def __init__(self, x):</span>
+<span class="c">#         self.val = x</span>
+<span class="c">#         self.left = None</span>
+<span class="c">#         self.right = None</span>
+
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="c"># @param p, a tree node</span>
+    <span class="c"># @param q, a tree node</span>
+    <span class="c"># @return a boolean</span>
+    <span class="k">def</span> <span class="nf">isSameTree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">p</span> <span class="ow">and</span> <span class="n">q</span> <span class="ow">and</span> <span class="n">p</span><span class="o">.</span><span class="n">val</span> <span class="o">==</span> <span class="n">q</span><span class="o">.</span><span class="n">val</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">isSameTree</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">left</span><span class="p">,</span> <span class="n">q</span><span class="o">.</span><span class="n">left</span><span class="p">)</span> \
+                   <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">isSameTree</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">right</span><span class="p">,</span> <span class="n">q</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">p</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">and</span> <span class="n">q</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">False</span>
 </pre></div>
 </td></tr></table>
 
@@ -204,7 +224,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
      
     	<li><a href="/tags.html#Leetcode-ref">Leetcode <span>8</span></a></li>
      
-    	<li><a href="/tags.html#Bit Magic-ref">Bit Magic <span>1</span></a></li>
+    	<li><a href="/tags.html#Binary Tree-ref">Binary Tree <span>4</span></a></li>
     
   
 
@@ -217,11 +237,11 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/project/2014/04/29/GitHub.io-with-BootStrap" title="Github.io With Bootstrap">&larr; Previous</a></li>
+        <li class="prev"><a href="/leetcode/2014/06/15/Leetcode-Reverse-Integer-%28Python%29" title="Leetcode Reverse Integer (python)">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/leetcode/2014/06/14/Leetcode-Maximum-Depth-of-Binary-Tree-%28Python%29" title="Leetcode Maximum Depth Of Binary Tree (python)">Next &rarr;</a></li>
+        <li class="next"><a href="/leetcode/2014/06/15/Leetcode-Unique-Binary-Search-Trees-%28Python%29" title="Leetcode Unique Binary Search Trees (python)">Next &rarr;</a></li>
       
       </ul>
     </div>
