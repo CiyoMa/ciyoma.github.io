@@ -15,7 +15,7 @@ author :
   email : ciyo.ma@gmail.com
   github : CiyoMa
 
-markdown: kramdown
+markdown: redcarpet
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

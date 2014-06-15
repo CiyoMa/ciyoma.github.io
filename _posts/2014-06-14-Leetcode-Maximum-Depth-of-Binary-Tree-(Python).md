@@ -11,9 +11,10 @@ The maximum depth is the number of nodes along the longest path from the root no
 ### Analysis:
 Maximum depth (MD) from a not None node n is the larger depth of two maximum depth from the left and right subtrees plus one.
 
-MD(n) = max(MD(n.left), MD(n.right))
-
 if n is None: MD(n) = 0
+
+else: MD(n) = max(MD(n.left), MD(n.right))
+
 
 ### Code:
 {% highlight python %}
