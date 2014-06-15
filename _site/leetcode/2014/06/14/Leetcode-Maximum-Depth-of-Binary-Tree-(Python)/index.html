@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" /> -->
     <!-- End SyntaxHighlighter -->
 
-    <title>Pacman Ai</title>
+    <title>Leetcode Maximum Depth Of Binary Tree (python)</title>
     
     <meta name="author" content="Siyong Ma">
 
@@ -126,18 +126,60 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Pacman Ai </h1>
+  <h1>Leetcode Maximum Depth Of Binary Tree (python) </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>21 March 2014</span>
+      <span>14 June 2014</span>
     </div>
     <div class="content">
-      <h1>Pacman AI -- Berkeley CS 188</h1>
+      <h3>Requirement:</h3>
 
-<p>$$a_b = \frac{1}{3^e}, c=2$$</p>
+<p>Given a binary tree, find its maximum depth.</p>
+
+<p>The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
+
+<h3>Analysis:</h3>
+
+<p>Maximum depth (MD) from a not None node n is the larger depth of two maximum depth from the left and right subtrees plus one.</p>
+
+<p>if n is None: MD(n) = 0</p>
+
+<p>else: MD(n) = max(MD(n.left), MD(n.right))</p>
+
+<h3>Code:</h3>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="python"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># Definition for a  binary tree node</span>
+<span class="c"># class TreeNode:</span>
+<span class="c">#     def __init__(self, x):</span>
+<span class="c">#         self.val = x</span>
+<span class="c">#         self.left = None</span>
+<span class="c">#         self.right = None</span>
+
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="c"># @param root, a tree node</span>
+    <span class="c"># @return an integer</span>
+    <span class="k">def</span> <span class="nf">maxDepth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">root</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">maxDepth</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxDepth</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</td></tr></table>
 
     </div>
 
@@ -150,8 +192,8 @@
 
   
      
-    	<li><a href="/categories.html#project-ref">
-    		project <span>2</span>
+    	<li><a href="/categories.html#leetcode-ref">
+    		leetcode <span>2</span>
     	</a></li>
     
   
@@ -169,11 +211,9 @@
 
   
      
-    	<li><a href="/tags.html#Pacman-ref">Pacman <span>1</span></a></li>
+    	<li><a href="/tags.html#Leetcode-ref">Leetcode <span>2</span></a></li>
      
-    	<li><a href="/tags.html#AI-ref">AI <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#Projects-ref">Projects <span>1</span></a></li>
+    	<li><a href="/tags.html#Binary Tree-ref">Binary Tree <span>1</span></a></li>
     
   
 
@@ -186,11 +226,11 @@
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/leetcode/2014/06/12/Leetcode-Single-Number-%28Python%29" title="Leetcode Single Number (python)">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/project/2014/04/29/GitHub.io-with-BootStrap" title="Github.io With Bootstrap">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>

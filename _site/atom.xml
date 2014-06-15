@@ -4,7 +4,7 @@
  <title>Siyong Ma</title>
  <link href="http://ciyoma.github.io/" rel="self"/>
  <link href="http://ciyoma.github.io"/>
- <updated>2014-04-29T23:53:44-04:00</updated>
+ <updated>2014-06-14T22:59:37-04:00</updated>
  <id>http://ciyoma.github.io</id>
  <author>
    <name>Siyong Ma</name>
@@ -13,16 +13,112 @@
 
  
  <entry>
+   <title>Leetcode Maximum Depth Of Binary Tree (python)</title>
+   <link href="http://ciyoma.github.io/leetcode/2014/06/14/Leetcode-Maximum-Depth-of-Binary-Tree-%28Python%29"/>
+   <updated>2014-06-14T00:00:00-04:00</updated>
+   <id>http://ciyoma.github.io/leetcode/2014/06/14/Leetcode-Maximum-Depth-of-Binary-Tree-(Python)</id>
+   <content type="html">&lt;h3&gt;Requirement:&lt;/h3&gt;
+
+&lt;p&gt;Given a binary tree, find its maximum depth.&lt;/p&gt;
+
+&lt;p&gt;The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;
+
+&lt;h3&gt;Analysis:&lt;/h3&gt;
+
+&lt;p&gt;Maximum depth (MD) from a not None node n is the larger depth of two maximum depth from the left and right subtrees plus one.&lt;/p&gt;
+
+&lt;p&gt;if n is None: MD(n) = 0&lt;/p&gt;
+
+&lt;p&gt;else: MD(n) = max(MD(n.left), MD(n.right))&lt;/p&gt;
+
+&lt;h3&gt;Code:&lt;/h3&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# Definition for a  binary tree node&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# class TreeNode:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#     def __init__(self, x):&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#         self.val = x&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#         self.left = None&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#         self.right = None&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# @param root, a tree node&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# @return an integer&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;maxDepth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxDepth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxDepth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Leetcode Single Number (python)</title>
+   <link href="http://ciyoma.github.io/leetcode/2014/06/12/Leetcode-Single-Number-%28Python%29"/>
+   <updated>2014-06-12T00:00:00-04:00</updated>
+   <id>http://ciyoma.github.io/leetcode/2014/06/12/Leetcode-Single-Number-(Python)</id>
+   <content type="html">&lt;h3&gt;Requirement:&lt;/h3&gt;
+
+&lt;p&gt;Given an array of integers, every element appears twice except for one. Find that single one.&lt;/p&gt;
+
+&lt;p&gt;Note:
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?&lt;/p&gt;
+
+&lt;h3&gt;Analysis:&lt;/h3&gt;
+
+&lt;p&gt;Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. Bit magic is linear without using extra memory.&lt;/p&gt;
+
+&lt;h3&gt;Code:&lt;/h3&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# @param A, a list of integer&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# @return an integer&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;singleNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Github.io With Bootstrap</title>
    <link href="http://ciyoma.github.io/project/2014/04/29/GitHub.io-with-BootStrap"/>
    <updated>2014-04-29T00:00:00-04:00</updated>
    <id>http://ciyoma.github.io/project/2014/04/29/GitHub.io-with-BootStrap</id>
    <content type="html">&lt;p&gt;Setting up Github.io page is super easy.&lt;/p&gt;
 
-&lt;p&gt;You just need create a public project with name:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[YOUR_GITHUB_USERNAME_HERE_WITHOUT_PARANTHESIS].github.io&lt;/code&gt;&lt;/pre&gt;
-
+&lt;p&gt;You just need create a public project with name: &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;[YOUR_GITHUB_USERNAME_HERE_WITHOUT_PARANTHESIS].github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then just write a index.html file for this project to set up your static personal GitHub.io page.&lt;/p&gt;
 
 &lt;p&gt;It does not look cool, right? How to deploy BootStrap? Use &lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;JekyllBootStrap&lt;/a&gt;!&lt;/p&gt;
@@ -31,19 +127,17 @@
 
 &lt;p&gt;Download JekyllBootStrap into your page folder.&lt;/p&gt;
 
-&lt;p&gt;Modify content in “_config.yml” to your profile information.&lt;/p&gt;
+&lt;p&gt;Modify content in &amp;quot;_config.yml&amp;quot; to your profile information.&lt;/p&gt;
 
 &lt;p&gt;Try run jekyll on your machine under the project folder.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Much better, but still bad looking? How to beautify it?&lt;/p&gt;
 
 &lt;p&gt;Try cooler BootStrap icon nav-bar or modify it to transparent with a background image for your page!&lt;/p&gt;
 
-&lt;p&gt;Put following code into file “_site/assets/themes/twitter/css/style.css” to make your nav bar transparent&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.navbar {
+&lt;p&gt;Put following code into file &amp;quot;/assets/themes/twitter/css/style.css&amp;quot; to make your nav bar transparent&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;.navbar {
    background-color: transparent;
    background: transparent;
 }
@@ -52,40 +146,74 @@
     background:transparent;
 }
 
-.navbar li { color: #000 } &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then modify your page with a background image! File location: “_site/css/main.css”&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;html, body { 
-  background-image: url(&amp;#39;/YOUR_IMAGE_PATH_UNDER_YOUR_PROJECT_FOLDER&amp;#39;);
-  height: 100%; 
-}&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can also modify the navi-bar information in “_includes/themes/twitter/default.html” For me, I modify it with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/archive.html&amp;quot;&amp;gt;Archive&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;        
+.navbar li { color: #000 } 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then modify your page with a background image! File location: &amp;quot;/assets/themes/twitter/css/style.css&amp;quot;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;body { 
+  background-image: url(&amp;#39;YOUR_IMAGE_RELATIVE_PATH_UNDER_PROJECT_FOLDER&amp;#39;);
+  background-size: inherit;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also modify the navi-bar information in &amp;quot;_includes/themes/twitter/default.html&amp;quot;
+For me, I modify it with&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/archive.html&amp;quot;&amp;gt;Archive&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;        
 &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/categories.html&amp;quot;&amp;gt;Categories&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
 &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/pages.html&amp;quot;&amp;gt;Pages&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
 &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/tags.html&amp;quot;&amp;gt;Tags&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/about.html&amp;quot;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/about.html&amp;quot;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;where about.html is rendered from about.md I write under the project root folder.&lt;/p&gt;
 
-&lt;p&gt;Now, try to write new post! New a file with name format “YYYY(YEAR)-MM(MONTH)-DD(DAY)-YOUR-PAGE-NAME-WITH-BLANK-REPLACED-BY-HYPHEN” under folder “_posts”, with format&lt;/p&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;layout: post
+&lt;p&gt;Now, try to write new post!
+New a file with name format &amp;quot;YYYY(YEAR)-MM(MONTH)-DD(DAY)-YOUR-PAGE-NAME-WITH-BLANK-REPLACED-BY-HYPHEN&amp;quot; under folder &amp;quot;_posts&amp;quot;,
+with format&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;---
+layout: post
 category: [YOUR CATEGORY]
-tags: [YOUR TAGS]&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;MAKR DOWN CONTENT&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I’ll recommend a great tool &lt;a href=&quot;http://dillinger.io/&quot;&gt;Dillinger&lt;/a&gt; to write MarkDown file! You can preview your MarkDown file online, similar to latex previewer &lt;a href=&quot;http://writelatex.com&quot;&gt;WriteLatex&lt;/a&gt;.&lt;/p&gt;
+tags: [YOUR TAGS]
+---
+MAKR DOWN CONTENT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I&amp;#39;ll recommend a great tool &lt;a href=&quot;http://dillinger.io/&quot;&gt;Dillinger&lt;/a&gt; to write MarkDown file! You can preview your MarkDown file online, similar to latex previewer &lt;a href=&quot;http://writelatex.com&quot;&gt;WriteLatex&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Build your page with beatiful BootStrap css class, just by referring &lt;a href=&quot;http://getbootstrap.com/2.3.2/components.html&quot;&gt;BootStrap&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Good Luck!&lt;/p&gt;
+&lt;p&gt;If you want to write latex math formula on your page, try &lt;a href=&quot;http://www.mathjax.org/&quot;&gt;MathJax&lt;/a&gt;!
+You can just put following code into the header of html file &amp;quot;_includes/themes/twitter/default.html&amp;quot;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now try MathJax &amp;quot; \$ \$ s = e ^{x+1} \cdot \frac {1}{1+e^x} \$ \$ &amp;quot; (remove space between dollar sign), you&amp;#39;ll get $$ s = e ^{x+1} \cdot \frac {1}{1+e^x} $$.&lt;/p&gt;
 
-&lt;p&gt;SIYONG MA&lt;/p&gt;</content>
+&lt;p&gt;For more about Math Block, click &lt;a href=&quot;http://kramdown.gettalong.org/syntax.html#math-blocks&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice: Github.io page no longer supports maruku markdown interpreter, try to add &amp;quot;markdown: kramdown&amp;quot; in &amp;quot;_config.yml&amp;quot; file to modify default markdown interpreter to Kramdown. : ) &lt;/p&gt;
+
+&lt;h4&gt;Get your code Syntax Highlighted in Github style&lt;/h4&gt;
+
+&lt;p&gt;Add or modify pygments and highlighter to the following value:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;pygments: true
+
+highlighter: pygments
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Include syntax.css in the html header in &amp;quot;_includes/themes/twitter/default.html&amp;quot; file.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/css/syntax.css&amp;quot; type=&amp;quot;text/css&amp;quot; media=&amp;quot;screen&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, try some code! (remove the backslash)&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;1
+2
+3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;\&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;\&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;highlight&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LANGUAGE_HERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linenos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt; \&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;\&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Here&lt;/span&gt;
+\&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;\&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endhighlight&lt;/span&gt; \&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;\&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Big cong! Your blog has been set up! &lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+&lt;p&gt;SIYONG MA&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -93,9 +221,10 @@ tags: [YOUR TAGS]&lt;/code&gt;&lt;/pre&gt;
    <link href="http://ciyoma.github.io/project/2014/03/21/Pacman-AI"/>
    <updated>2014-03-21T00:00:00-04:00</updated>
    <id>http://ciyoma.github.io/project/2014/03/21/Pacman-AI</id>
-   <content type="html">&lt;h1 id=&quot;pacman_ai__berkeley_cs_188&quot;&gt;Pacman AI – Berkeley CS 188&lt;/h1&gt;
+   <content type="html">&lt;h1&gt;Pacman AI -- Berkeley CS 188&lt;/h1&gt;
 
-&lt;p&gt;$a_b = \frac{1}{3^e}$ $$a_b = \frac{1}{3^e}, c=2$$&lt;/p&gt;</content>
+&lt;p&gt;$$a_b = \frac{1}{3^e}, c=2$$&lt;/p&gt;
+</content>
  </entry>
  
  

@@ -13,15 +13,17 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. Bit magic is linear without using extra memory.
 
 ### Code:
+{% highlight python linenos=table %}
+class Solution:
+    # @param A, a list of integer
+    # @return an integer
+    def singleNumber(self, A):
+        result = None
+        for i in A:
+            if result is None:
+                result = i
+            else:
+                result ^= i
+        return result
+{% endhighlight %}
 
-    class Solution:
-        # @param A, a list of integer
-        # @return an integer
-        def singleNumber(self, A):
-            result = None
-            for i in A:
-                if result is None:
-                    result = i
-                else:
-                    result ^= i
-            return result

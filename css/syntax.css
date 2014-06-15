@@ -1,3 +1,27 @@
+.highlighttable {
+    width: 100%;
+    /*border-collapse: collapse;*/
+    margin: 0;
+}
+/*.highlighttable  .linenos {
+    width: auto;
+}*/
+.highlighttable .code {
+    /*overflow: auto;*/
+    width: 94%;
+}
+table  pre {
+    margin: 0;
+    /*white-space: pre;*/
+}
+/*.highlight {
+    overflow: auto;
+}*/
+.highlight pre {
+    /*background: #ffffff;*/
+    margin: 0;
+}
+
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
