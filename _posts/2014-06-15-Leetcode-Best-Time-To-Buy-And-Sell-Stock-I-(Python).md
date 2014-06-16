@@ -15,7 +15,7 @@ The maximum profit at day i is denoted as p[i]. The choice at day i+1 is either 
 Therefore, $$p[i] = max(p[i-1]+prices[i]-prices[i-1], prices[i]-prices[i-1]) $$
 $$ p[0] = 0 $$
 
-Then we choose the best profit we can get from all n days.
+Then we get the maximum profit from all n days.
 
 So the running time is O(n).
 
