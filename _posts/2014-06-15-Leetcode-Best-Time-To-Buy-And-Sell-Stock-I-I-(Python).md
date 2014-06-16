@@ -12,7 +12,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 The sum of all increments is the maximum profit!
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python  linenos anchorlinenos%}
 class Solution:
     # @param prices, a list of integer
     # @return an integer

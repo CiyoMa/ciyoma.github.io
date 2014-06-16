@@ -20,7 +20,7 @@ Then we get the maximum profit from all n days.
 So the running time is O(n).
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python linenos anchorlinenos %}
 class Solution:
     # @param prices, a list of integer
     # @return an integer

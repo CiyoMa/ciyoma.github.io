@@ -13,7 +13,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 Number exclusive or itself yields 0. 0 exclusive or other number x will yield x itself. Bit magic is linear without using extra memory.
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python  linenos anchorlinenos %}
 class Solution:
     # @param A, a list of integer
     # @return an integer

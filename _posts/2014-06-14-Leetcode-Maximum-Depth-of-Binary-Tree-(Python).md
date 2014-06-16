@@ -17,7 +17,7 @@ else: MD(n) = max(MD(n.left), MD(n.right))
 
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python  linenos anchorlinenos %}
 
 # Definition for a  binary tree node
 # class TreeNode:

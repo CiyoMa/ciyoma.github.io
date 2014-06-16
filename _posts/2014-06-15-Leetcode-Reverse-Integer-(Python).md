@@ -22,7 +22,7 @@ the for every digits d can be implemented as d = num % 10, num /= 10
 return result with correct sign.
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python  linenos anchorlinenos %}
 class Solution:
     # @return an integer
     def reverse(self, x):

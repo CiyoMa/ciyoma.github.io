@@ -16,7 +16,7 @@ Two trees are same, if and only if,
 2. The left/right subtrees of current two nodes are the same
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python  linenos anchorlinenos %}
 
 # Definition for a  binary tree node
 # class TreeNode:

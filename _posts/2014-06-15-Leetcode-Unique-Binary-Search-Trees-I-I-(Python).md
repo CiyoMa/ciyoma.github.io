@@ -30,7 +30,7 @@ Base case 1: start == end: return [TreeNode(start)]
 Base case 2: start > end: return [None]
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python  linenos anchorlinenos %}
 # Definition for a  binary tree node
 # class TreeNode:
 #     def __init__(self, x):

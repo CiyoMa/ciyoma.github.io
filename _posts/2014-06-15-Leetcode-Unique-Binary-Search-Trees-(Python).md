@@ -29,7 +29,7 @@ $$ DP[n] = \sum_{all ~t \in [1, n]} DP[t-1]*DP[n-t]$$
 $$ DP[0] = 1, ~ DP[1] = 1$$
 
 ### Code:
-{% highlight python linenos=table %}
+{% highlight python  linenos anchorlinenos %}
 class Solution:
     # @return an integer
     def numTrees(self, n):
