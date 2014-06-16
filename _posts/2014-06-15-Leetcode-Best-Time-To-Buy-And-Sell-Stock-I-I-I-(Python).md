@@ -28,8 +28,8 @@ class Solution:
     # @param prices, a list of integer
     # @return an integer
     def maxProfit(self, prices):
-    	if len(prices) <= 1:
-    		return 0
+        if len(prices) <= 1:
+            return 0
         delta = [0] + [prices[i] - prices[i-1] for i in range(1, len(prices))]
         p = delta[:]
         for i in range(1, len(prices)):
@@ -43,6 +43,6 @@ class Solution:
         bestEarnAfter = [0 for i in range(len(prices))]
         bestEarnAfter[len(prices)-1] = max(0,futureMax[len(prices)-1] - prices[len(prices)-1])
         for i in range(len(prices)-2, -1, -1):
-        	bestEarnAfter[i] = max(bestEarnAfter[i+1],futureMax[i] - prices[i])
+            bestEarnAfter[i] = max(bestEarnAfter[i+1],futureMax[i] - prices[i])
         return max([bestEarnAfter[i]+p[i] for i in range(len(prices))])
 {% endhighlight %}

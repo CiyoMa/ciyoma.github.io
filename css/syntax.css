@@ -67,7 +67,7 @@ pre code a:only-of-type::before {
     padding: 10px;
 }*/
 
-.highlight pre > code > .lineno {
+.highlight pre code .lineno {
   font-size: .9em;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

@@ -142,11 +142,11 @@
 <p>For example,</p>
 
 <p>Given n = 3, there are a total of 5 unique BST&#39;s.</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>   1         3     3      2      1
-<a name="line-2"></a>    \       /     /      / \      \
-<a name="line-3"></a>     3     2     1      1   3      2
-<a name="line-4"></a>    /     /       \                 \
-<a name="line-5"></a>   2     1         2                 3
+<div class="highlight"><pre><code class="text language-text" data-lang="text">   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
 </code></pre></div>
 <h3>Analysis:</h3>
 
@@ -162,27 +162,17 @@ $$ DP[0] = 1, ~ DP[1] = 1$$</p>
 
 <h3>Code:</h3>
 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="python"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="c"># @return an integer</span>
-    <span class="k">def</span> <span class="nf">numTrees</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-        <span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-            <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-                <span class="n">temp</span> <span class="o">+=</span> <span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span>
-        <span class="k">return</span> <span class="n">t</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
-</pre></div>
-</td></tr></table>
+<div class="highlight"><pre><code class="python"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+<span class="lineno"> 2</span>     <span class="c"># @return an integer</span>
+<span class="lineno"> 3</span>     <span class="k">def</span> <span class="nf">numTrees</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<span class="lineno"> 4</span>      <span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+<span class="lineno"> 5</span>         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="lineno"> 6</span>          <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno"> 7</span>          <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="lineno"> 8</span>              <span class="n">temp</span> <span class="o">+=</span> <span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="lineno"> 9</span>          <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span>
+<span class="lineno">10</span>         <span class="k">return</span> <span class="n">t</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</code></pre></div>
 
     </div>
 

@@ -138,7 +138,7 @@
       <p>Setting up Github.io page is super easy.</p>
 
 <p>You just need create a public project with name: </p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>[YOUR_GITHUB_USERNAME_HERE_WITHOUT_PARANTHESIS].github.io
+<div class="highlight"><pre><code class="text language-text" data-lang="text">[YOUR_GITHUB_USERNAME_HERE_WITHOUT_PARANTHESIS].github.io
 </code></pre></div>
 <p>Then just write a index.html file for this project to set up your static personal GitHub.io page.</p>
 
@@ -151,49 +151,49 @@
 <p>Modify content in &quot;_config.yml&quot; to your profile information.</p>
 
 <p>Try run jekyll on your machine under the project folder.</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>jekyll serve
+<div class="highlight"><pre><code class="text language-text" data-lang="text">jekyll serve
 </code></pre></div>
 <p>Much better, but still bad looking? How to beautify it?</p>
 
 <p>Try cooler BootStrap icon nav-bar or modify it to transparent with a background image for your page!</p>
 
 <p>Put following code into file &quot;/assets/themes/twitter/css/style.css&quot; to make your nav bar transparent</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>.navbar {
-<a name="line-2"></a>   background-color: transparent;
-<a name="line-3"></a>   background: transparent;
-<a name="line-4"></a>}
-<a name="line-5"></a>
-<a name="line-6"></a>.navbar-inner {
-<a name="line-7"></a>    background:transparent;
-<a name="line-8"></a>}
-<a name="line-9"></a>
-<a name="line-10"></a>.navbar li { color: #000 } 
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.navbar {
+   background-color: transparent;
+   background: transparent;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.navbar li { color: #000 } 
 </code></pre></div>
 <p>Then modify your page with a background image! File location: &quot;/assets/themes/twitter/css/style.css&quot;</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>body { 
-<a name="line-2"></a>  background-image: url(&#39;YOUR_IMAGE_RELATIVE_PATH_UNDER_PROJECT_FOLDER&#39;);
-<a name="line-3"></a>  background-size: inherit;
-<a name="line-4"></a>}
+<div class="highlight"><pre><code class="text language-text" data-lang="text">body { 
+  background-image: url(&#39;YOUR_IMAGE_RELATIVE_PATH_UNDER_PROJECT_FOLDER&#39;);
+  background-size: inherit;
+}
 </code></pre></div>
 <p>You can also modify the navi-bar information in &quot;_includes/themes/twitter/default.html&quot;
 For me, I modify it with</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>&lt;li&gt;&lt;a href=&quot;/archive.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;        
-<a name="line-2"></a>&lt;li&gt;&lt;a href=&quot;/categories.html&quot;&gt;Categories&lt;/a&gt;&lt;/li&gt;
-<a name="line-3"></a>&lt;li&gt;&lt;a href=&quot;/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
-<a name="line-4"></a>&lt;li&gt;&lt;a href=&quot;/tags.html&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
-<a name="line-5"></a>&lt;li&gt;&lt;a href=&quot;/about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;li&gt;&lt;a href=&quot;/archive.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;        
+&lt;li&gt;&lt;a href=&quot;/categories.html&quot;&gt;Categories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/tags.html&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
 </code></pre></div>
 <p>where about.html is rendered from about.md I write under the project root folder.</p>
 
 <p>Now, try to write new post!
 New a file with name format &quot;YYYY(YEAR)-MM(MONTH)-DD(DAY)-YOUR-PAGE-NAME-WITH-BLANK-REPLACED-BY-HYPHEN&quot; under folder &quot;_posts&quot;,
 with format</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>---
-<a name="line-2"></a>layout: post
-<a name="line-3"></a>category: [YOUR CATEGORY]
-<a name="line-4"></a>tags: [YOUR TAGS]
-<a name="line-5"></a>---
-<a name="line-6"></a>MAKR DOWN CONTENT
+<div class="highlight"><pre><code class="text language-text" data-lang="text">---
+layout: post
+category: [YOUR CATEGORY]
+tags: [YOUR TAGS]
+---
+MAKR DOWN CONTENT
 </code></pre></div>
 <p>I&#39;ll recommend a great tool <a href="http://dillinger.io/">Dillinger</a> to write MarkDown file! You can preview your MarkDown file online, similar to latex previewer <a href="http://writelatex.com">WriteLatex</a>.</p>
 
@@ -201,7 +201,7 @@ with format</p>
 
 <p>If you want to write latex math formula on your page, try <a href="http://www.mathjax.org/">MathJax</a>!
 You can just put following code into the header of html file &quot;_includes/themes/twitter/default.html&quot;.</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;
 </code></pre></div>
 <p>Now try MathJax &quot; \$ \$ s = e ^{x+1} \cdot \frac {1}{1+e^x} \$ \$ &quot; (remove space between dollar sign), you&#39;ll get $$ s = e ^{x+1} \cdot \frac {1}{1+e^x} $$.</p>
 
@@ -212,12 +212,12 @@ You can just put following code into the header of html file &quot;_includes/the
 <h4>Get your code Syntax Highlighted in Github style</h4>
 
 <p>Add or modify pygments and highlighter to the following value:</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>pygments: true
-<a name="line-2"></a>
-<a name="line-3"></a>highlighter: pygments
+<div class="highlight"><pre><code class="text language-text" data-lang="text">pygments: true
+
+highlighter: pygments
 </code></pre></div>
 <p>Include syntax.css in the html header in &quot;_includes/themes/twitter/default.html&quot; file.</p>
-<div class="highlight"><pre><code class="text"><a name="line-1"></a>&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/syntax.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/syntax.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;
 </code></pre></div>
 <p>Now, try some code! (remove the backslash)</p>
 
