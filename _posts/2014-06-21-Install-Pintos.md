@@ -31,7 +31,7 @@ install them by
 
 NOTE: $HOME will refer to your home directory, wherever you create a folder for pintos. 
 
-##PLEASE CHANGE $HOME TO YOUR ACTUAL PATH!!!
+####PLEASE CHANGE $HOME TO YOUR ACTUAL PATH!!!
 
 Once the prerequisites have been installed, do the following steps:
 
@@ -43,7 +43,7 @@ Once the prerequisites have been installed, do the following steps:
 
 	Open the script 'pintos-gdb' (in $HOME/stanford/pintos/src/utils) in any text editor. Find the variable GDBMACROS and set it to point to $HOME/stanford/pintos/src/misc/gdb-macros .
 
-	##Remember to replace $HOME with the actual path.
+	####Remember to replace $HOME with the actual path.
 
 3.  Compile the utilities
 
@@ -81,7 +81,7 @@ Once the prerequisites have been installed, do the following steps:
 
     	ln -s qemu-system-i386 qemu
 
-	##IF YOUR SYSTEM IS 64-BITS USE FOLLOWING CODE INSTEAD
+	####IF YOUR SYSTEM IS 64-BITS USE FOLLOWING CODE INSTEAD
 
     	ln -s qemu-system-x86_64 qemu
 
