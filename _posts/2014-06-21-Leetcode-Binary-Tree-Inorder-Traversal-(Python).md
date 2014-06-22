@@ -9,11 +9,11 @@ Given a binary tree, return the inorder traversal of its nodes' values.
 For example:
 Given binary tree {1,#,2,3},
 
-	   1
-	    \
-	     2
-	    /
-	   3
+       1
+        \
+         2
+        /
+       3
 
 return [1,2,3].
 
@@ -31,7 +31,7 @@ Non-Recursive Solution: a little bit difficult.
 
 *.  initialize stack with root node
 
-1.  pop a node from stack, go left, save every current node and its right branch into a stack util left is None.
+1.  pop a not None node from stack, go left, save every current node and its right branch into a stack util left is None.
 
 2.  print this node
 
@@ -88,7 +88,5 @@ class Solution:
                 cur = s.pop()
 
             result.append(cur.val)
-            # print result
-            
         return result
 {% endhighlight %}
