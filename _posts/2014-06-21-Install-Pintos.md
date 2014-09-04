@@ -11,6 +11,7 @@ Pintos code has been written to run on Unix based systems, so you can install it
 ###Prerequisites
 
 The following packages need to be installed on your system:
+
 1.  GCC
 
 2.  GNU binutils
@@ -110,3 +111,16 @@ Once the prerequisites have been installed, do the following steps:
 [This](http://krharsha.blogspot.com/2013/08/pintos-installation.html) is the site that got me started. I encountered some errors by krharsha's tutorial but fix it in bold text.
 
 [This](http://computercalledvarun.wordpress.com/2013/02/03/pintos-on-ubuntu/) is the site recommended by [Professor Wilson](http://www.ccs.neu.edu/home/cbw/)
+
+###For Pintos installation on Northeastern CCIS machine
+After you copy and untar the pintos.tar.gz file to the "stanford" folder I said at the begining of this post from "/course/cs5600sp13". [INSTRUCTION HERE](http://www.ccs.neu.edu/home/cbw/5600/pintos/pintos_1.html#SEC1)
+
+1. Create a .bash_profile file under your home folder. write
+
+        export PATH=${PATH}:$HOME/standford/pintos/bin:/course/cs5600sp13/bin:/course/cs5600sp13/pintos/bin
+
+2. Restart your terminal
+
+3. Do the qemu/boches, kernel.bin/loader.bin name modifying things as the part above in your "stanford" folder. Exactly the same steps above, except installing and linking qemu, since professor have already put them in /course/cs5600sp13/bin and /course/cs5600sp13/pintos/bin.
+
+4. Congratulations! pintos installed!
