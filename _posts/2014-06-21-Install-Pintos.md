@@ -119,7 +119,11 @@ After you copy and untar the pintos.tar.gz file to the "stanford" folder I said 
 
         export PATH=${PATH}:$HOME/standford/pintos/bin:/course/cs5600sp13/bin:/course/cs5600sp13/pintos/bin
 
-2. Restart your terminal
+2. Restart your ssh session. It should work now.
+   
+   Not working on CCIS machine? try login-shell mode. ctrl+alt+f1, or add the following to .bashrc file under your ~ folder.
+
+        PATH=${PATH}:$HOME/standford/pintos/bin:/course/cs5600sp13/bin:/course/cs5600sp13/pintos/bin
 
 3. Do the qemu/boches, kernel.bin/loader.bin name modifying things as the part above in your "stanford" folder. Exactly the same steps above, except installing and linking qemu, since professor have already put them in /course/cs5600sp13/bin and /course/cs5600sp13/pintos/bin.
 
