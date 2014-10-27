@@ -23,12 +23,14 @@ Thanks Ruiyang for detecting that.
 The pintos source code in 2013spr folder is different from the code for 2014fall!
 
 Make sure to add the following lines to shutdown_power_off() in devices/shudown.c after the serial_flush(); Make check issue solved.
+
 /* ACPI power-off */
+
 outw (0xB004, 0x2000);
 
 for system call, the 2013spr code introduce a weird stack layout. That is because the assembly in src/lib/user/syscall.c use "g" as register argument instead of "r"!
 
-r"  means assign a general register  register for the argument,  "g" means  to assign  any register,  memory  or immediate integer for this.
+"r"  means assign a general register  register for the argument,  "g" means  to assign  any register,  memory  or immediate integer for this.
 
 ###How to add more file to makefile
 
