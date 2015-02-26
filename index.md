@@ -5,7 +5,7 @@ title: "Siyong Ma"
 
 Hi, my name is Siyong Ma, and now a Master candidate in Computer Science graduate program of [Northeastern University](http://www.ccs.neu.edu/), Boston, MA. I earned my B.Engineering degree in Software Engineering from Software Engineering Institute of [East China Normal University](http://www.ecnu.edu.cn), July, 2013.
 
-####### I am looking for 2015 Sprinh CO-OP opportunity and summer internship now. 
+####### I am currently looking for Full-time position and available on Jan, 2016. 
 
 #### About me
 I am a good learner, and eager to participate in industry based research or work. I am familiar with Python, Java, and C++. I am currently taking some interesting MOOC online courses on [edx.org](http://www.edx.org/). Besides taking Algorithm courses at Northeastern University, I also audit [6.006](http://stellar.mit.edu/S/course/6/sp14/6.006/) & [6.046](http://stellar.mit.edu/S/course/6/sp14/6.046/) at MIT. I'm also auditing Stochastic Process course at Boston University, out of my interest in Markov process and Poisson point process. [Here](https://github.com/CiyoMa/) is my github page.
